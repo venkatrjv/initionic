@@ -1,11 +1,11 @@
-fetch from remote:
-git fetch https://github.com/venkatrjv/initionic.git
+git clone https://github.com/venkatrjv/initionic.git
 
-mkdir my_project
-cd my_project
-touch .gitignore
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin youruser@yourserver.com:/path/to/my_project.git
-git push origin master
+new window:
+ git remote set-url origin https://github.com/venkatrjv/initionic.git
+ git add .
+ git status
+ git commit -m "test"
+  git push
+  
+  
+   git config --global --unset http.proxy
