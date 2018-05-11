@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tools</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="authenticate()">Auth</button>
+  <h1>{{found}}</h1>
+
+  <button ion-button (click)="onCamera()">Camera</button>
+
+  <img src="{{imageData}}">
+  <button ion-button (click)="onFileOpen()">File</button>
+  <h1>{{file}}</h1>
+
+  <button ion-button (click)="onSetStorage()">setStorage</button>
+  <button ion-button (click)="onGetStorage()">getStorage</button>
+  {{storageData}}
+</ion-content>
